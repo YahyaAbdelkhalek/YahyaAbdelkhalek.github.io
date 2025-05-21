@@ -1,0 +1,138 @@
+.blog-content {
+    z-index: 20; /* Increase z-index to be above nav */
+    position: relative; /* Ensure stacking context */
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 12px rgba(54,44,40,0.10);
+    font-family: var(--montserrat);
+    color: var(--d-brown-2);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+    color: var(--d-brown-2);
+    font-family: var(--playfair-display);
+    margin-top: 2.2em;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+}
+
+.blog-content h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.blog-content h2 {
+    font-size: 1.5rem;;
+}
+
+.blog-content h3 {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    
+}
+
+.blog-content p {
+    margin-bottom: 1.2em;
+    color: var(--d-brown-2);
+}
+
+.blog-content a {
+    color: var(--pop-color-2);
+    text-decoration: underline;
+    transition: color 0.2s;
+
+}
+
+.blog-content a:hover {
+    color: var(--pop-color);
+}
+
+.blog-content blockquote {
+    border-left: 4px solid var(--pop-color);
+    padding-left: 1em;
+    color: var(--l-brown);
+    background: #f9f6f2;
+    margin: 1.5em 0;
+    font-style: italic;
+}
+
+.blog-content img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin: 1.2em 0;
+    display: block;
+}
+
+.blog-content ul, .blog-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.blog-content code {
+    background: #f4ede7;
+    color: var(--d-brown);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.98em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.blog-content pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+    background: #f4ede7;
+    border-radius: 6px;
+}
+
+
+
+.blog-main-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+
+.blog-fixed-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    width: 38vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .blog-main-layout {
+        flex-direction: column;
+    }
+    .blog-fixed-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        box-shadow: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+    .blog-fixed-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        display: block;
+    }
+}

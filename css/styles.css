@@ -3,7 +3,7 @@
 
 @import url(sections.css/v_nav.css);
 @import url(sections.css/home.css);
-
+@import url(sections.css/blog.css);
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {

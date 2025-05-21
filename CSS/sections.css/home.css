@@ -1,0 +1,126 @@
+.main {
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: 80px;/* Adjust to leave space for the vertical nav bar */
+    padding: 20px;
+    font-family: var(--montserrat);
+    color: var(--primary-color);
+    position: absolute;
+
+}
+
+.main h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--d-brown-2);
+    position: relative;
+    width: 100%;
+}
+
+.main a {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--l-brown);
+    position: relative;
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow: ellipsis; /* Makes the element respect max-width */
+    max-width: 100%; /* Adjust this as needed */
+}
+
+main a.b{
+    color: var(--pop-color-2);
+}
+main a.p{
+    color: var(--pop-color);
+}
+
+.blog-list a{
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative;
+    padding: 20px;
+    color : pop-color-2;
+    text-decoration: none;
+}
+
+.project-card {
+    position: relative;
+    width: 250px;
+    min-height: 360px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+    float: left;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 0%;
+}
+
+.project-card h3{
+    margin-top: 0px;
+    font-size: 100%;
+    text-align: center;
+    color : var(--d-brown-2)
+}
+.project-card img{
+    width:95%; 
+    height: 50%; 
+    margin-left: 3%; 
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+.tag-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.tag {
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--montserrat);
+}
+
+/* Tag color variants */
+.tag-1 {
+    background-color: #FFE2DD;
+    color: #FF6B6B;
+}
+
+.tag-2 {
+    background-color: #E2F5FF;
+    color: #3498DB;
+}
+
+.tag-3 {
+    background-color: #E2FFE8;
+    color: #2ECC71;
+}
+
+
+.main h4{
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--d-brown-2);
+    max-width: 65ch;
+    letter-spacing: 0.01em;
+}
+.icon-links {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display:inline-flex;
+    gap: 4px;
+    padding: 20px;
+}
+
+
+.icon-links img {
+    width: 22px;
+    height: 22px;
+}

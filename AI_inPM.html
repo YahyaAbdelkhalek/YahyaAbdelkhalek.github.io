@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/eagle_t.png" />
+    <link rel="stylesheet" href="CSS/sections.css/blog.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>yahya's blogs</title>
+     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="v_nav">
+        <div class="v_nav_title">
+            <a href="index.html">yahya's</a>
+        </div>
+        <div class="v_nav_options">
+            <a href="index.html">home</a>
+            <a href="main_blogs.html"><span>bl</span></span>ogs</a>
+            <a href="projects.html">projects</a>
+            <a href="bio.html">bio</a>
+        </div>
+    </div>
+    <main class="main">
+        <section class="blog-content" id="blog-content">
+            <div style="text-align:center;color:var(--d-brown);">Loading...</div>
+        </section>
+            <div class="blog-fixed-image">
+                <img src="assets\jobs_quote.png" alt="Jobs on Products">
+            </div>
+    </main>
+    <script>
+        // Set the path to your markdown file here:
+        const mdFile = "blogs/AI in Product Development 1f60f86799ab80eb8317daebbc66b9fe.md";
+        fetch(mdFile)
+            .then(response => response.text())
+            .then(md => {
+                document.getElementById('blog-content').innerHTML = marked.parse(md);
+            })
+            .catch(() => {
+                document.getElementById('blog-content').innerHTML = "<p style='color:red;'>Failed to load blog post.</p>";
+            });
+    </script>
+</body>
+</html>

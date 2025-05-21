@@ -1,0 +1,38 @@
+.v_nav{
+    position: fixed;
+    width:90px;
+    z-index: 10;
+    height: 100%;
+    background: var(--secondary-color);
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.v_nav_title a{
+    font-family: 'Arial';
+    font-weight: bold; 
+    font-size: 50px;
+    letter-spacing: 1px; 
+    color: var(--d-brown);
+    margin-left: 4px;
+    margin-top: 6px;
+    padding: 23px;
+    text-decoration: none;
+    
+ }
+
+.v_nav_options a{
+    font-family: var(--montserrat);
+    color: var(--cream);
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    margin-left: 10px;
+ }
+ .v_nav_options span{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+ }

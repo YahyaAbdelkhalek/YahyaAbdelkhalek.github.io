@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url(sections.css/v_nav.css);
+@import url(sections.css/home.css);
+
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+    --primary-color: #E8DCC4 ;
+    --secondary-color: #C4B7A6 ;
+  
+    --l-brown: #A69580 ;
+    --d-brown: #362C28 ; /*Logo*/
+    --d-brown-2: #5E4C3E  ; 
+    --cream: #F5F1E8 ; /*nav elements*/
+    --pop-color: #7A9E9F ;  /*For Project*/
+    --pop-color-2: #B07D62; /*For Blog*/
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

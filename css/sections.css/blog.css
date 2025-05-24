@@ -14,6 +14,7 @@
     letter-spacing: 0.01em;
 }
 
+
 .blog-content h1, .blog-content h2, .blog-content h3 {
     color: var(--d-brown-2);
     font-family: var(--playfair-display);
@@ -46,6 +47,9 @@
     color: var(--pop-color-2);
     text-decoration: underline;
     transition: color 0.2s;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 0.8em;
 
 }
 
